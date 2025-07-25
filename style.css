@@ -1,0 +1,70 @@
+/* General styles */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #003366; /* Darker blue text */
+}
+
+#notify.pop {
+    background-color: #cce5ff;
+    border: 1px solid #99ccff;
+    color: #004085;
+    padding: 15px 40px 15px 15px;
+    margin: 20px auto;
+    width: fit-content;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    position: relative;
+    display: none; /* Initially hidden */
+}
+
+/* Close Button */
+#close-btn {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #004085;
+}
+#close-btn:hover {
+    color: #ff0000;
+}
+
+
+/* FAQ Section */
+#faq-section {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+#faq-section h1 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+
+
+
+.slider {
+    margin-top: 20px;
+    align-items: center;
+}
+
+.slider img {
+    width: 300px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.slider-controls button {
+    padding: 10px 20px;
+    background-color: #007bff;
+}
