@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 5s infinite linear;
+}
+.face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: rgba(255,255,255,0.2);
+  border: 2px solid #0ff;
+}
+.face.front  { transform: translateZ(50px); }
+.face.back   { transform: rotateY(180deg) translateZ(50px); }
+.face.left   { transform: rotateY(-90deg) translateZ(50px); }
+.face.right  { transform: rotateY(90deg) translateZ(50px); }
+.face.top    { transform: rotateX(90deg) translateZ(50px); }
+.face.bottom { transform: rotateX(-90deg) translateZ(50px); }
+
+@keyframes spin {
+  from { transform: rotateX(0) rotateY(0); }
+  to   { transform: rotateX(360deg) rotateY(360deg); }
+}
+</style>
+</head>
+<body>
+<div class="cube">
+  <div class="face front">
+    <img src="image1.png" height="100px" width="100px"/>
+  </div>
+  <div class="face back">
+    <img src="image1.png" height="100px" width="100px"/>
+  </div>
+  <div class="face left">
+    <img src="image1.png" height="100px" width="100px"/>
+  </div>
+  <div class="face right">
+    <img src="image1.png" height="100px" width="100px"/>
+  </div>
+  <div class="face top">
+    <img src="image1.png" height="100px" width="100px"/>
+  </div>
+  <div class="face bottom">
+    <img src="image1.png" height="100px" width="100px"/>
+  </div>
+</div>
+</body>
+</html>

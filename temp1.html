@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.reveal {
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  font-size: 40px;
+  font-weight: bold;
+  overflow: hidden;
+}
+.reveal::before {
+  content: 'Jainam';
+  color: #ff4081;
+  position: absolute;
+  left: 0;
+  width: 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ff4081;
+  animation: none;
+  transition: width 0.5s;
+}
+.reveal:hover::before {
+  width: 100%;
+}
+</style>
+</head>
+<body>
+<div class="reveal">Hover Me</div>
+</body>
+</html>
